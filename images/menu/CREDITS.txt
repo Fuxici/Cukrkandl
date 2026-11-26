@@ -1,33 +1,6 @@
-Fotky menu – Wikimedia Commons. Upraveno (ořez 4:3, barevné ladění).
-Licence CC BY / CC BY-SA vyžadují uvedení autora; před spuštěním webu doplnit kredity nebo nahradit vlastními fotkami.
+Fotky v images/menu/, images/foto/ a images/dort-kvetiny.webp pocházejí z Google Map:
+profil „Kavárna Cukrkandl“ (Purkyňova 762/11a, Svitavy) – fotky majitele a fotky z recenzí návštěvníků.
+Upraveno: ořez a zmenšení. Na žádné fotce nejsou rozpoznatelní lidé.
 
-espresso.jpg — File:Cup of espresso 02.jpg — Kritzolina — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Cup_of_espresso_02.jpg
-lungo.jpg — File:Carajillo en Duralex Cigogne.jpg — Francesc Fort — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Carajillo_en_Duralex_Cigogne.jpg
-cappuccino.jpg — File:Classical Cappuccino in Savour Cafe.jpg — Peachyeung316 — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Classical_Cappuccino_in_Savour_Cafe.jpg
-flatwhite.jpg — File:Flat white coffee at Highdown Gardens, Worthing, West Sussex, England.jpg — Acabashi — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Flat_white_coffee_at_Highdown_Gardens,_Worthing,_West_Sussex,_England.jpg
-latte.jpg — File:Caffe Latte at Pulse Cafe.jpg — B adger1 — CC0 — https://commons.wikimedia.org/wiki/File:Caffe_Latte_at_Pulse_Cafe.jpg
-videnska.jpg — File:Wiener Melange 2.JPG — Dr. Bernd Gross — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Wiener_Melange_2.JPG
-filtr.jpg — File:Coffee pour over using Hario cone.jpg — User:GorillaWarfare — CC BY-SA 1.0 — https://commons.wikimedia.org/wiki/File:Coffee_pour_over_using_Hario_cone.jpg
-ledova.jpg — File:Iced Coffee @ Fasta Pasta Christies Beach 20250125-120157.jpg — RegionVisitor90 — CC0 — https://commons.wikimedia.org/wiki/File:Iced_Coffee_@_Fasta_Pasta_Christies_Beach_20250125-120157.jpg
-denni.jpg — File:Piece of chocolate cake on a white plate decorated with chocolate sauce.jpg — Daria YakovlevaMinor edits made by Subsidiary account — CC0 — https://commons.wikimedia.org/wiki/File:Piece_of_chocolate_cake_on_a_white_plate_decorated_with_chocolate_sauce.jpg
-cheesecake.jpg — File:Mondays at Il Forno - Cheesecake with strawberry sauce.jpg — Alex Dugger — CC BY 2.0 — https://commons.wikimedia.org/wiki/File:Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg
-mrkvovy.jpg — File:Carrot cake - Milfey Patisserie 2026-09-07.jpg — Andy Li — CC0 — https://commons.wikimedia.org/wiki/File:Carrot_cake_-_Milfey_Patisserie_2026-09-07.jpg
-rez.jpg — File:Strawberry cream cake - Rawlab 2025-08-31.jpg — Andy Li — CC0 — https://commons.wikimedia.org/wiki/File:Strawberry_cream_cake_-_Rawlab_2025-08-31.jpg
-vetrnik.jpg — File:Vetrnik.jpg — Jakub Holzer (WMCZ) — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Vetrnik.jpg
-makronka.jpg — File:Macarons, French made mini cakes.JPG — Nicolas Halftermeyer — CC BY-SA 3.0 — https://commons.wikimedia.org/wiki/File:Macarons,_French_made_mini_cakes.JPG
-objednavka.jpg — File:Ombre Rose Cake.jpg — CakeLovesMe — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Ombre_Rose_Cake.jpg
-toast.jpg — File:Smashed Avocado On Toast (with one poached egg) - Jonny's 2026-01-06.jpg — Andy Li — CC0 — https://commons.wikimedia.org/wiki/File:Smashed_Avocado_On_Toast_(with_one_poached_egg)_-_Jonny%27s_2026-01-06.jpg
-sunka.jpg — File:Ham & cheese toasted sandwich - Potatoast 2026-05-02.jpg — Andy Li — CC0 — https://commons.wikimedia.org/wiki/File:Ham_%26_cheese_toasted_sandwich_-_Potatoast_2026-05-02.jpg
-croissant.jpg — File:Croissant sandwich with brie cheese and two ham with green salad.jpg — Peachyeung316 — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Croissant_sandwich_with_brie_cheese_and_two_ham_with_green_salad.jpg
-quiche.jpg — File:Slice of Quiche (Unsplash).jpg — timothy muza timothymuza — CC0 — https://commons.wikimedia.org/wiki/File:Slice_of_Quiche_(Unsplash).jpg
-caj.jpg — File:Corn silk tea cup teapot 01.jpg — KQuhen — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Corn_silk_tea_cup_teapot_01.jpg
-chai.jpg — File:Chai Latte - T @ The Dials 2024-02-26.jpg — Andy Li — CC0 — https://commons.wikimedia.org/wiki/File:Chai_Latte_-_T_@_The_Dials_2024-02-26.jpg
-matcha.jpg — File:Matcha tea latte with rosetta latte art.jpg — Irvan Ary Maulana — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Matcha_tea_latte_with_rosetta_latte_art.jpg
-cokolada.jpg — File:Hot chocolate in Bengaluru (2026) 32.jpg — Gpkp — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Hot_chocolate_in_Bengaluru_(2026)_32.jpg
-kakao.jpg — File:Hot Chocolate in December.jpg — Emna Mizouni — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Hot_Chocolate_in_December.jpg
-babyccino.jpg — File:Cappuccino at ARS Cafe.jpg — Robert Smith — CC BY 4.0 — https://commons.wikimedia.org/wiki/File:Cappuccino_at_ARS_Cafe.jpg
-sirup.jpg — File:2020-03-05 19 54 23 A glass of raspberry lemonade at the Applebee's in Fair Lakes, Fairfax County, Virginia.jpg — Famartin — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:2020-03-05_19_54_23_A_glass_of_raspberry_lemonade_at_the_Applebee%27s_in_Fair_Lakes,_Fairfax_County,_Virginia.jpg
-limonada.jpg — File:Limonata (karaf).jpg — E4024 — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Limonata_(karaf).jpg
-dzban.jpg — File:Lemonade pitcher and glass.jpg — Grandmaster Huon — CC0 — https://commons.wikimedia.org/wiki/File:Lemonade_pitcher_and_glass.jpg
-ledcaj.jpg — File:Iced Tea with Lemon, First Watch, Melbourne, Florida.jpg — Pokemonprime — CC BY 4.0 — https://commons.wikimedia.org/wiki/File:Iced_Tea_with_Lemon,_First_Watch,_Melbourne,_Florida.jpg
-voda.jpg — File:Glass of water ouside.jpg — Kurt Kaiser — CC0 — https://commons.wikimedia.org/wiki/File:Glass_of_water_ouside.jpg
+Před spuštěním webu: potvrdit s kavárnou, že fotky smíme použít (fotky od návštěvníků patří jejich autorům),
+případně je nahradit vlastními fotkami kavárny se stejným názvem souboru.

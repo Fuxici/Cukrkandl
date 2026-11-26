@@ -3,13 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kavárna Cukrkandl | Svitavy</title>
+  <!-- Návrh webu: nesmí do vyhledávačů. Před ostrým spuštěním smazat. -->
+  <meta name="robots" content="noindex, nofollow">
+  <title>Kavárna Cukrkandl | Domácí dorty a káva ve Svitavách</title>
   <meta name="description" content="Útulná kavárna ve Svitavách s dorty a dezerty vlastní výroby, výběrovou kávou z pražírny Nordbeans a domácími limonádami. Dětský koutek, pejsci vítáni.">
-  <meta property="og:title" content="Kavárna Cukrkandl | Svitavy">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fuxastudio.github.io/cukrkandl/">
+  <meta property="og:title" content="Kavárna Cukrkandl | Domácí dorty a káva ve Svitavách">
   <meta property="og:description" content="Dorty vlastní výroby, výběrová káva Nordbeans a domácí limonády v Purkyňově ulici ve Svitavách.">
-  <meta property="og:image" content="images/interier.jpg">
-  <link rel="icon" href="images/favicon.png">
-  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <meta property="og:image" content="https://fuxastudio.github.io/cukrkandl/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Dort z kavárny Cukrkandl na růžovém pozadí s nápisem Kavárna Cukrkandl">
+  <meta property="og:locale" content="cs_CZ">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" href="icon-512.png" type="image/png" sizes="512x512">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="preload" href="fonts/Calistoga-400-6NUU8F.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/InterDisplay-500-iwWTDc.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.css">
@@ -21,17 +31,17 @@
   <header class="header">
     <nav class="header__nav" aria-label="Hlavní navigace">
       <ul class="header__links header__links--left">
-        <li><a class="btn btn--nav is-active" href="#home" aria-current="page">Domů</a></li>
-        <li><a class="btn btn--nav" href="#about-us">O nás</a></li>
-        <li><a class="btn btn--nav" href="#menu">Nabídka</a></li>
+        <li><a class="btn btn--nav is-active" href="#uvod" aria-current="page">Domů</a></li>
+        <li><a class="btn btn--nav" href="#o-nas">O nás</a></li>
+        <li><a class="btn btn--nav" href="#nabidka">Nabídka</a></li>
       </ul>
-      <a class="header__logo" href="#home" aria-label="Kavárna Cukrkandl – úvod">
+      <a class="header__logo" href="#uvod" aria-label="Kavárna Cukrkandl – úvod">
         <img src="images/logo-cukrkandl.png" alt="Logo Kavárna Cukrkandl" width="100" height="100">
       </a>
       <ul class="header__links header__links--right">
         <li><a class="btn btn--nav" href="#galerie">Galerie</a></li>
         <li><a class="btn btn--nav" href="#kontakt">Kontakt</a></li>
-        <li><a class="btn btn--nav btn--pink" href="#rezervace" data-booking-type="rezervace">Rezervovat</a></li>
+        <li><a class="btn btn--nav btn--pink" href="#objednavka" data-booking-type="dort">Objednat</a></li>
       </ul>
       <button class="burger" type="button" aria-label="Otevřít menu" aria-expanded="false" aria-controls="mobile-menu">
         <span></span><span></span>
@@ -41,12 +51,12 @@
     <div class="mobile-menu" id="mobile-menu" hidden>
       <div class="mobile-menu__overlay" data-close-menu></div>
       <nav class="mobile-menu__panel" aria-label="Mobilní navigace">
-        <a class="btn btn--menu is-active" href="#home" aria-current="page">Domů</a>
-        <a class="btn btn--menu" href="#about-us">O nás</a>
-        <a class="btn btn--menu" href="#menu">Nabídka</a>
+        <a class="btn btn--menu is-active" href="#uvod" aria-current="page">Domů</a>
+        <a class="btn btn--menu" href="#o-nas">O nás</a>
+        <a class="btn btn--menu" href="#nabidka">Nabídka</a>
         <a class="btn btn--menu" href="#galerie">Galerie</a>
         <a class="btn btn--menu" href="#kontakt">Kontakt</a>
-        <a class="btn btn--menu btn--pink" href="#rezervace" data-booking-type="rezervace">Rezervovat</a>
+        <a class="btn btn--menu btn--pink" href="#objednavka" data-booking-type="dort">Objednat</a>
       </nav>
     </div>
   </header>
@@ -54,44 +64,44 @@
   <main id="main">
 
     <!-- ============ HERO ============ -->
-    <section class="hero" id="home">
+    <section class="hero" id="uvod">
       <div class="hero__track">
         <div class="hero__sticky">
           <div class="hero__stage">
-            <img class="hero__cake" src="images/hero-cake.png" alt="Čokoládový dort s jahodami a borůvkami" width="1536" height="1024">
+            <img class="hero__cake" src="images/hero-cake.webp" alt="Dort z kavárny Cukrkandl s malinami a borůvkami" width="1536" height="1024">
             <div class="hero__title">
               <h1 class="hero__line hero__line--1">Kavárna</h1>
               <p class="hero__line hero__line--2">Cukrkandl</p>
             </div>
           </div>
           <div class="hero__deco hero__deco--left" data-deco="hero-left" aria-hidden="true">
-            <img src="images/hero-deco-left.png" alt="" width="784" height="632">
+            <img src="images/hero-deco-left.webp" alt="" width="631" height="431">
           </div>
           <div class="hero__deco hero__deco--right" data-deco="hero-right" aria-hidden="true">
-            <img src="images/hero-deco-right.png" alt="" width="764" height="764">
+            <img src="images/hero-deco-right.webp" alt="" width="700" height="572">
           </div>
         </div>
       </div>
     </section>
 
     <!-- ============ O NÁS ============ -->
-    <section class="about" id="about-us">
+    <section class="about" id="o-nas">
       <div class="divider divider--hero" aria-hidden="true"></div>
 
       <div class="about__deco about__deco--left" data-deco="about-left" aria-hidden="true">
-        <img src="images/about-deco-left.png" alt="" width="838" height="616">
+        <img src="images/about-deco-left.webp" alt="" width="838" height="616" loading="lazy">
       </div>
       <div class="about__deco about__deco--right" data-deco="about-right" aria-hidden="true">
-        <img src="images/about-deco-right.png" alt="" width="566" height="460">
+        <img src="images/about-deco-right.webp" alt="" width="566" height="460" loading="lazy">
       </div>
 
       <div class="about__content">
         <h2 class="section-title" data-appear>O nás</h2>
         <div class="about__text" data-appear style="--appear-y: 20px">
-          <p>Kavárna Cukrkandl je útulné místo na svitavském Předměstí, kde se zastavíte na kávu, kousek dortu nebo jen tak na chvíli klidu.</p>
-          <p>Dorty a dezerty <strong>pečeme sami, poctivě a z kvalitních surovin</strong>. K nim podáváme výběrovou kávu z pražírny Nordbeans a domácí limonády. Dort vám rádi připravíme i na objednávku – na oslavu, narozeniny nebo jen pro radost.</p>
-          <p>Pro nejmenší máme dětský koutek s domečkem, takže si rodiče mohou kávu vychutnat v klidu. A pejsci jsou u nás vítáni.</p>
-          <p>Přijďte ochutnat. Těšíme se na vás!</p>
+          <p>Cukrkandl je malá kavárna na svitavském Předměstí. Zastavte se na kávu, kousek dortu, nebo si jen na chvíli sedněte.</p>
+          <p>Dorty a dezerty pečeme sami. Kávu bereme z pražírny Nordbeans a limonády děláme doma. Dort vám rádi upečeme i na objednávku, na narozeniny, na svatbu, nebo jen tak.</p>
+          <p>Pro děti tu máme koutek s domečkem, takže si rodiče kafe opravdu vychutnají. A pejsci jsou u nás vítaní.</p>
+          <p>Přijďte ochutnat.</p>
         </div>
       </div>
 
@@ -104,127 +114,126 @@
       <p class="picks__lead" data-appear>Zimní nabídka – jen do konce února</p>
       <ul class="picks__grid">
         <li class="pick" data-appear>
-          <a class="pick__link" href="#rezervace" data-booking-type="dort">
+          <div class="pick__link">
             <span class="pick__media">
-              <img src="images/dort-ostruzina.jpg" alt="Ostružinový dort s bílou čokoládou" width="788" height="1400" loading="lazy">
-              <span class="pick__overlay"></span>
-              <span class="btn btn--pink pick__cta">Objednat</span>
+              <img src="images/menu/orechova-rolada.webp" alt="Ořechová roláda s krémem a vlašským ořechem" width="800" height="600" loading="lazy">
             </span>
             <span class="pick__badge">Nové</span>
-            <h3 class="pick__name">Ostružinový dort</h3>
-            <p class="pick__desc">Bílá čokoláda, hořká ganache a&nbsp;ostružiny</p>
-          </a>
+            <h3 class="pick__name">Ořechová roláda</h3>
+            <p class="pick__desc">Ořechový piškot, máslový krém a&nbsp;karamel</p>
+          </div>
         </li>
         <li class="pick" data-appear>
-          <a class="pick__link" href="#rezervace" data-booking-type="rezervace">
+          <div class="pick__link">
             <span class="pick__media">
-              <img src="images/menu/chai.jpg" alt="Perníkové chai latte posypané skořicí" width="800" height="600" loading="lazy">
-              <span class="pick__overlay"></span>
-              <span class="btn btn--pink pick__cta">Rezervovat</span>
+              <img src="images/menu/pistaciovy-croissant.webp" alt="Croissant s pistáciovým krémem a drcenými pistáciemi" width="800" height="600" loading="lazy">
             </span>
-            <h3 class="pick__name">Perníkové chai latte</h3>
-            <p class="pick__desc">Domácí perníkový sirup, skořice a&nbsp;mléčná pěna</p>
-          </a>
+            <h3 class="pick__name">Pistáciový croissant</h3>
+            <p class="pick__desc">Plněný pistáciovým krémem, ke kávě jako stvořený</p>
+          </div>
         </li>
         <li class="pick" data-appear>
-          <a class="pick__link" href="#rezervace" data-booking-type="dort">
+          <div class="pick__link">
             <span class="pick__media">
-              <img src="images/menu/cheesecake.jpg" alt="Cheesecake s brusinkovou omáčkou" width="800" height="600" loading="lazy">
-              <span class="pick__overlay"></span>
-              <span class="btn btn--pink pick__cta">Objednat</span>
+              <img src="images/menu/tiramisu.webp" alt="Tiramisu kopule poprášená kakaem" width="800" height="600" loading="lazy">
             </span>
-            <h3 class="pick__name">Brusinkový cheesecake</h3>
-            <p class="pick__desc">Vanilkový krém na perníkovém korpusu</p>
-          </a>
+            <h3 class="pick__name">Tiramisu kopule</h3>
+            <p class="pick__desc">Mascarpone, espresso a&nbsp;kakao</p>
+          </div>
         </li>
         <li class="pick" data-appear>
-          <a class="pick__link" href="#rezervace" data-booking-type="dort">
+          <div class="pick__link">
             <span class="pick__media">
-              <img src="images/menu/objednavka.jpg" alt="Zdobený dort na objednávku" width="800" height="600" loading="lazy">
-              <span class="pick__overlay"></span>
-              <span class="btn btn--pink pick__cta">Objednat</span>
+              <img src="images/menu/svatecni-dort.webp" alt="Čokoládový dort s polevou a čerstvým ovocem" width="800" height="600" loading="lazy">
             </span>
             <h3 class="pick__name">Sváteční dort</h3>
             <p class="pick__desc">Na Vánoce i&nbsp;oslavy – objednávky týden předem</p>
-          </a>
+          </div>
         </li>
       </ul>
       <div class="divider divider--menu" aria-hidden="true"></div>
     </section>
 
     <!-- ============ NABÍDKA / CENÍK ============ -->
-    <!-- Nabídka je ukázková – popisy, gramáže a ceny doplnit podle kavárny. Fotky: Wikimedia Commons, kredity v images/menu/CREDITS.txt -->
-    <section class="menu" id="menu">
+    <!-- Nabídka je ukázková – produkty podle fotek z Google Map, popisy, gramáže a ceny doplnit podle kavárny. Zdroj fotek: images/menu/CREDITS.txt -->
+    <section class="menu" id="nabidka">
       <h2 class="section-title section-title--pink" data-appear>Na co máte chuť?</h2>
       <div class="menu__bar">
       <div class="menu__tabs" role="tablist" aria-label="Kategorie nabídky">
         <button class="btn menu__tab" type="button" role="tab" id="tab-dorty" aria-controls="panel-dorty" aria-selected="true"><span class="menu__tab-long">Dorty a dezerty</span><span class="menu__tab-short">Dorty</span></button>
         <button class="btn menu__tab" type="button" role="tab" id="tab-kava" aria-controls="panel-kava" aria-selected="false" tabindex="-1"><span class="menu__tab-long">Káva</span><span class="menu__tab-short">Káva</span></button>
-        <button class="btn menu__tab" type="button" role="tab" id="tab-slane" aria-controls="panel-slane" aria-selected="false" tabindex="-1"><span class="menu__tab-long">Slané</span><span class="menu__tab-short">Slané</span></button>
-        <button class="btn menu__tab" type="button" role="tab" id="tab-caj" aria-controls="panel-caj" aria-selected="false" tabindex="-1"><span class="menu__tab-long">Čaj a čokoláda</span><span class="menu__tab-short">Čaj</span></button>
-        <button class="btn menu__tab" type="button" role="tab" id="tab-deti" aria-controls="panel-deti" aria-selected="false" tabindex="-1"><span class="menu__tab-long">Pro děti</span><span class="menu__tab-short">Děti</span></button>
-        <button class="btn menu__tab" type="button" role="tab" id="tab-limonady" aria-controls="panel-limonady" aria-selected="false" tabindex="-1"><span class="menu__tab-long">Limonády a nealko</span><span class="menu__tab-short">Limonády</span></button>
+        <button class="btn menu__tab" type="button" role="tab" id="tab-snidane" aria-controls="panel-snidane" aria-selected="false" tabindex="-1"><span class="menu__tab-long">Snídaně a slané</span><span class="menu__tab-short">Snídaně</span></button>
+        <button class="btn menu__tab" type="button" role="tab" id="tab-caj" aria-controls="panel-caj" aria-selected="false" tabindex="-1"><span class="menu__tab-long">Matcha a čaj</span><span class="menu__tab-short">Matcha</span></button>
+        <button class="btn menu__tab" type="button" role="tab" id="tab-limonady" aria-controls="panel-limonady" aria-selected="false" tabindex="-1"><span class="menu__tab-long">Limonády</span><span class="menu__tab-short">Limonády</span></button>
       </div>
       </div>
       <div class="menu__panel is-active" role="tabpanel" id="panel-dorty" aria-labelledby="tab-dorty">
         <h3 class="menu__cat-title">Dorty a dezerty <small>vlastní výroba</small></h3>
         <ul class="menu__cards">
           <li class="menu-card">
-            <img class="menu-card__img" src="images/menu/denni.jpg" alt="Dort dle denní nabídky" width="800" height="600" loading="lazy">
-            <div class="menu-card__body">
-              <div class="menu-card__top"><h4 class="menu-card__name">Dort dle denní nabídky</h4><span class="menu-card__price">85 Kč</span></div>
-              <span class="menu-card__size">1 kousek</span>
-              <p class="menu-card__desc">Co jsme ráno upekli. Aktuální výběr najdete ve vitríně u pultu.</p>
-            </div>
-          </li>
-          <li class="menu-card">
-            <img class="menu-card__img" src="images/menu/cheesecake.jpg" alt="Cheesecake" width="800" height="600" loading="lazy">
-            <div class="menu-card__body">
-              <div class="menu-card__top"><h4 class="menu-card__name">Cheesecake</h4><span class="menu-card__price">89 Kč</span></div>
-              <span class="menu-card__size">120 g</span>
-              <p class="menu-card__desc">Krémový, na máslovém sušenkovém korpusu, s domácím malinovým přelivem.</p>
-            </div>
-          </li>
-          <li class="menu-card">
             <span class="menu-card__stickers"><span class="sticker sticker--oblibene">oblíbené</span></span>
-            <img class="menu-card__img" src="images/menu/mrkvovy.jpg" alt="Mrkvový dort" width="800" height="600" loading="lazy">
+            <img class="menu-card__img" src="images/menu/tiramisu.webp" alt="Tiramisu kopule" width="800" height="600" loading="lazy">
             <div class="menu-card__body">
-              <div class="menu-card__top"><h4 class="menu-card__name">Mrkvový dort</h4><span class="menu-card__price">85 Kč</span></div>
-              <span class="menu-card__size">130 g</span>
-              <p class="menu-card__desc">Vláčný s vlašskými ořechy a skořicí, krém z čerstvého sýra.</p>
-            </div>
-          </li>
-          <li class="menu-card">
-            <img class="menu-card__img" src="images/menu/rez.jpg" alt="Jahodový řez" width="800" height="600" loading="lazy">
-            <div class="menu-card__body">
-              <div class="menu-card__top"><h4 class="menu-card__name">Jahodový řez</h4><span class="menu-card__price">79 Kč</span></div>
-              <span class="menu-card__size">110 g</span>
-              <p class="menu-card__desc">Lehký piškot, vanilkový krém a čerstvé jahody.</p>
-            </div>
-          </li>
-          <li class="menu-card">
-            <img class="menu-card__img" src="images/menu/vetrnik.jpg" alt="Větrník" width="800" height="600" loading="lazy">
-            <div class="menu-card__body">
-              <div class="menu-card__top"><h4 class="menu-card__name">Větrník</h4><span class="menu-card__price">65 Kč</span></div>
+              <div class="menu-card__top"><h4 class="menu-card__name">Tiramisu kopule</h4><span class="menu-card__price">89&nbsp;Kč</span></div>
               <span class="menu-card__size">1 ks</span>
-              <p class="menu-card__desc">Odpalované těsto, karamelový krém, šlehačka a karamelová poleva. Klasika jako od babičky.</p>
+              <p class="menu-card__desc">Mascarpone, espresso a piškot, poprášené kakaem.</p>
+            </div>
+          </li>
+          <li class="menu-card">
+            <img class="menu-card__img" src="images/menu/malinova-kopule.webp" alt="Malinová kopule" width="800" height="600" loading="lazy">
+            <div class="menu-card__body">
+              <div class="menu-card__top"><h4 class="menu-card__name">Malinová kopule</h4><span class="menu-card__price">89&nbsp;Kč</span></div>
+              <span class="menu-card__size">1 ks</span>
+              <p class="menu-card__desc">Malinová pěna s krémovým jádrem a lesklou glazurou.</p>
+            </div>
+          </li>
+          <li class="menu-card">
+            <img class="menu-card__img" src="images/menu/pistaciovy-kosicek.webp" alt="Pistáciový košíček" width="800" height="600" loading="lazy">
+            <div class="menu-card__body">
+              <div class="menu-card__top"><h4 class="menu-card__name">Pistáciový košíček</h4><span class="menu-card__price">79&nbsp;Kč</span></div>
+              <span class="menu-card__size">1 ks</span>
+              <p class="menu-card__desc">Křehký košíček, pistáciový krém a ostružina navrch.</p>
+            </div>
+          </li>
+          <li class="menu-card">
+            <img class="menu-card__img" src="images/menu/red-velvet.webp" alt="Red velvet" width="800" height="600" loading="lazy">
+            <div class="menu-card__body">
+              <div class="menu-card__top"><h4 class="menu-card__name">Red velvet</h4><span class="menu-card__price">85&nbsp;Kč</span></div>
+              <span class="menu-card__size">130 g</span>
+              <p class="menu-card__desc">Kakaový piškot, krém z čerstvého sýra a maliny.</p>
+            </div>
+          </li>
+          <li class="menu-card">
+            <img class="menu-card__img" src="images/menu/makovy-dort.webp" alt="Makový cheesecake" width="800" height="600" loading="lazy">
+            <div class="menu-card__body">
+              <div class="menu-card__top"><h4 class="menu-card__name">Makový cheesecake</h4><span class="menu-card__price">85&nbsp;Kč</span></div>
+              <span class="menu-card__size">120 g</span>
+              <p class="menu-card__desc">Krémový tvaroh s mákem na sušenkovém korpusu.</p>
             </div>
           </li>
           <li class="menu-card">
             <span class="menu-card__stickers"><span class="sticker sticker--bezlepku">bez lepku</span></span>
-            <img class="menu-card__img" src="images/menu/makronka.jpg" alt="Makronky" width="800" height="600" loading="lazy">
+            <img class="menu-card__img" src="images/menu/pusinky.webp" alt="Pusinky s malinami" width="800" height="600" loading="lazy">
             <div class="menu-card__body">
-              <div class="menu-card__top"><h4 class="menu-card__name">Makronky</h4><span class="menu-card__price">35 Kč</span></div>
+              <div class="menu-card__top"><h4 class="menu-card__name">Pusinky s malinami</h4><span class="menu-card__price">59&nbsp;Kč</span></div>
               <span class="menu-card__size">1 ks</span>
-              <p class="menu-card__desc">Mandlové, plněné ganache. Malinová, pistáciová, čokoládová a podle dne.</p>
+              <p class="menu-card__desc">Křupavá pusinka, šlehaný krém a čerstvé maliny.</p>
             </div>
           </li>
           <li class="menu-card">
-            <img class="menu-card__img" src="images/menu/objednavka.jpg" alt="Dort na objednávku" width="800" height="600" loading="lazy">
+            <img class="menu-card__img" src="images/menu/lotus-brownie.webp" alt="Lotus brownie" width="800" height="600" loading="lazy">
             <div class="menu-card__body">
-              <div class="menu-card__top"><h4 class="menu-card__name">Dort na objednávku</h4><span class="menu-card__price">od 890 Kč</span></div>
+              <div class="menu-card__top"><h4 class="menu-card__name">Lotus brownie</h4><span class="menu-card__price">69&nbsp;Kč</span></div>
+              <span class="menu-card__size">1 ks</span>
+              <p class="menu-card__desc">Vláčné čokoládové brownie s karamelovou sušenkou Lotus.</p>
+            </div>
+          </li>
+          <li class="menu-card">
+            <img class="menu-card__img" src="images/menu/dort-objednavka.webp" alt="Dort na objednávku" width="800" height="600" loading="lazy">
+            <div class="menu-card__body">
+              <div class="menu-card__top"><h4 class="menu-card__name">Dort na objednávku</h4><span class="menu-card__price">od 890&nbsp;Kč</span></div>
               <span class="menu-card__size">od 12 porcí</span>
-              <p class="menu-card__desc">Na narozeniny, svatbu i do firmy. Domluvíme chuť, velikost i zdobení. Objednávejte 5 dní předem.</p>
+              <p class="menu-card__desc">Na narozeniny, svatbu i do firmy. Domluvíme chuť, velikost i zdobení. Objednávejte týden předem.</p>
             </div>
           </li>
         </ul>
@@ -233,247 +242,209 @@
         <h3 class="menu__cat-title">Káva <small>pražírna Nordbeans</small></h3>
         <ul class="menu__cards">
           <li class="menu-card">
-            <img class="menu-card__img" src="images/menu/espresso.jpg" alt="Espresso" width="800" height="600" loading="lazy">
+            <img class="menu-card__img" src="images/menu/espresso.webp" alt="Espresso" width="800" height="600" loading="lazy">
             <div class="menu-card__body">
-              <div class="menu-card__top"><h4 class="menu-card__name">Espresso</h4><span class="menu-card__price">55 Kč</span></div>
+              <div class="menu-card__top"><h4 class="menu-card__name">Espresso</h4><span class="menu-card__price">55&nbsp;Kč</span></div>
               <span class="menu-card__size">30 ml</span>
-              <p class="menu-card__desc">Krátké a silné, z výběrové kávy Nordbeans.</p>
-            </div>
-          </li>
-          <li class="menu-card">
-            <img class="menu-card__img" src="images/menu/lungo.jpg" alt="Espresso lungo" width="800" height="600" loading="lazy">
-            <div class="menu-card__body">
-              <div class="menu-card__top"><h4 class="menu-card__name">Espresso lungo</h4><span class="menu-card__price">59 Kč</span></div>
-              <span class="menu-card__size">80 ml</span>
-              <p class="menu-card__desc">Prodloužené espresso, jemnější a delší na pití.</p>
+              <p class="menu-card__desc">Krátké a silné, z výběrové kávy Nordbeans. Se sklenkou vody.</p>
             </div>
           </li>
           <li class="menu-card">
             <span class="menu-card__stickers"><span class="sticker sticker--oblibene">oblíbené</span></span>
-            <img class="menu-card__img" src="images/menu/cappuccino.jpg" alt="Cappuccino" width="800" height="600" loading="lazy">
+            <img class="menu-card__img" src="images/menu/cappuccino.webp" alt="Cappuccino" width="800" height="600" loading="lazy">
             <div class="menu-card__body">
-              <div class="menu-card__top"><h4 class="menu-card__name">Cappuccino</h4><span class="menu-card__price">69 Kč</span></div>
+              <div class="menu-card__top"><h4 class="menu-card__name">Cappuccino</h4><span class="menu-card__price">69&nbsp;Kč</span></div>
               <span class="menu-card__size">180 ml</span>
               <p class="menu-card__desc">Espresso s napěněným mlékem a hustou pěnou. Na přání s ovesným mlékem.</p>
             </div>
           </li>
           <li class="menu-card">
-            <img class="menu-card__img" src="images/menu/flatwhite.jpg" alt="Flat white" width="800" height="600" loading="lazy">
+            <img class="menu-card__img" src="images/menu/flat-white.webp" alt="Flat white" width="800" height="600" loading="lazy">
             <div class="menu-card__body">
-              <div class="menu-card__top"><h4 class="menu-card__name">Flat white</h4><span class="menu-card__price">79 Kč</span></div>
+              <div class="menu-card__top"><h4 class="menu-card__name">Flat white</h4><span class="menu-card__price">79&nbsp;Kč</span></div>
               <span class="menu-card__size">200 ml</span>
-              <p class="menu-card__desc">Dvojité espresso a sametové mléko s tenkou pěnou. Na přání s ovesným mlékem.</p>
+              <p class="menu-card__desc">Dvojité espresso a sametové mléko s tenkou pěnou.</p>
             </div>
           </li>
           <li class="menu-card">
-            <img class="menu-card__img" src="images/menu/latte.jpg" alt="Caffè latte" width="800" height="600" loading="lazy">
+            <img class="menu-card__img" src="images/menu/latte-macchiato.webp" alt="Latte macchiato" width="800" height="600" loading="lazy">
             <div class="menu-card__body">
-              <div class="menu-card__top"><h4 class="menu-card__name">Caffè latte</h4><span class="menu-card__price">75 Kč</span></div>
+              <div class="menu-card__top"><h4 class="menu-card__name">Latte macchiato</h4><span class="menu-card__price">75&nbsp;Kč</span></div>
               <span class="menu-card__size">300 ml</span>
-              <p class="menu-card__desc">Hodně mléka a jemná káva. Na pomalé ráno. Na přání s ovesným mlékem.</p>
+              <p class="menu-card__desc">Hodně mléka a jemná káva ve vrstvách. Na pomalé odpoledne.</p>
             </div>
           </li>
           <li class="menu-card">
-            <img class="menu-card__img" src="images/menu/videnska.jpg" alt="Vídeňská melange" width="800" height="600" loading="lazy">
+            <img class="menu-card__img" src="images/menu/kava-s-sebou.webp" alt="Káva s sebou" width="800" height="600" loading="lazy">
             <div class="menu-card__body">
-              <div class="menu-card__top"><h4 class="menu-card__name">Vídeňská melange</h4><span class="menu-card__price">79 Kč</span></div>
-              <span class="menu-card__size">200 ml</span>
-              <p class="menu-card__desc">Espresso s mlékem a mléčnou pěnou, podávané se sklenkou vody.</p>
-            </div>
-          </li>
-          <li class="menu-card">
-            <img class="menu-card__img" src="images/menu/filtr.jpg" alt="Filtrovaná káva" width="800" height="600" loading="lazy">
-            <div class="menu-card__body">
-              <div class="menu-card__top"><h4 class="menu-card__name">Filtrovaná káva</h4><span class="menu-card__price">65 Kč</span></div>
-              <span class="menu-card__size">250 ml</span>
-              <p class="menu-card__desc">Překapávaná přes V60, zrna se mění podle sezony.</p>
+              <div class="menu-card__top"><h4 class="menu-card__name">Káva s sebou</h4><span class="menu-card__price">od 55&nbsp;Kč</span></div>
+              <span class="menu-card__size">do kelímku</span>
+              <p class="menu-card__desc">Kteroukoli kávu vám rádi nachystáme na cestu.</p>
             </div>
           </li>
           <li class="menu-card">
             <span class="menu-card__stickers"><span class="sticker sticker--letni">letní</span></span>
-            <img class="menu-card__img" src="images/menu/ledova.jpg" alt="Ledová káva" width="800" height="600" loading="lazy">
+            <img class="menu-card__img" src="images/menu/ledova-kava.webp" alt="Ledová káva" width="800" height="600" loading="lazy">
             <div class="menu-card__body">
-              <div class="menu-card__top"><h4 class="menu-card__name">Ledová káva</h4><span class="menu-card__price">89 Kč</span></div>
+              <div class="menu-card__top"><h4 class="menu-card__name">Ledová káva</h4><span class="menu-card__price">89&nbsp;Kč</span></div>
               <span class="menu-card__size">300 ml</span>
               <p class="menu-card__desc">Espresso, studené mléko, vanilková zmrzlina a šlehačka.</p>
             </div>
           </li>
+          <li class="menu-card">
+            <span class="menu-card__stickers"><span class="sticker sticker--letni">letní</span></span>
+            <img class="menu-card__img" src="images/menu/oreo-frappe.webp" alt="Oreo frappé" width="800" height="600" loading="lazy">
+            <div class="menu-card__body">
+              <div class="menu-card__top"><h4 class="menu-card__name">Oreo frappé</h4><span class="menu-card__price">95&nbsp;Kč</span></div>
+              <span class="menu-card__size">300 ml</span>
+              <p class="menu-card__desc">Ledový mléčný nápoj s kávou, sušenkami Oreo a šlehačkou.</p>
+            </div>
+          </li>
         </ul>
       </div>
-      <div class="menu__panel" role="tabpanel" id="panel-slane" aria-labelledby="tab-slane">
-        <h3 class="menu__cat-title">Slané</h3>
+      <div class="menu__panel" role="tabpanel" id="panel-snidane" aria-labelledby="tab-snidane">
+        <h3 class="menu__cat-title">Snídaně a slané</h3>
         <ul class="menu__cards">
           <li class="menu-card">
-            <span class="menu-card__stickers"><span class="sticker sticker--vege">vegetariánské</span></span>
-            <img class="menu-card__img" src="images/menu/toast.jpg" alt="Avokádový toast" width="800" height="600" loading="lazy">
+            <img class="menu-card__img" src="images/menu/toast.webp" alt="Grilovaný toast" width="800" height="600" loading="lazy">
             <div class="menu-card__body">
-              <div class="menu-card__top"><h4 class="menu-card__name">Avokádový toast</h4><span class="menu-card__price">145 Kč</span></div>
+              <div class="menu-card__top"><h4 class="menu-card__name">Grilovaný toast</h4><span class="menu-card__price">119&nbsp;Kč</span></div>
               <span class="menu-card__size">1 porce</span>
-              <p class="menu-card__desc">Kváskový chléb, avokádo, sázené vejce, klíčky a chilli.</p>
+              <p class="menu-card__desc">Se šunkou a sýrem, s grilovanou paprikou a dvěma dipy.</p>
             </div>
           </li>
           <li class="menu-card">
-            <img class="menu-card__img" src="images/menu/sunka.jpg" alt="Grilovaný toast" width="800" height="600" loading="lazy">
+            <span class="menu-card__stickers"><span class="sticker sticker--vege" title="vegetariánské" aria-label="vegetariánské">vege</span></span>
+            <img class="menu-card__img" src="images/menu/chleb-pomazanka.webp" alt="Chléb s pomazánkou" width="800" height="600" loading="lazy">
             <div class="menu-card__body">
-              <div class="menu-card__top"><h4 class="menu-card__name">Grilovaný toast</h4><span class="menu-card__price">99 Kč</span></div>
-              <span class="menu-card__size">1 porce</span>
-              <p class="menu-card__desc">Se šunkou a eidamem, s malým salátem a rajčaty.</p>
+              <div class="menu-card__top"><h4 class="menu-card__name">Chléb s pomazánkou</h4><span class="menu-card__price">79&nbsp;Kč</span></div>
+              <span class="menu-card__size">2 ks</span>
+              <p class="menu-card__desc">Kváskový chléb, domácí pomazánka, ředkvičky a klíčky.</p>
             </div>
           </li>
           <li class="menu-card">
-            <img class="menu-card__img" src="images/menu/croissant.jpg" alt="Croissant se šunkou" width="800" height="600" loading="lazy">
+            <img class="menu-card__img" src="images/menu/mandlovy-croissant.webp" alt="Mandlový croissant" width="800" height="600" loading="lazy">
             <div class="menu-card__body">
-              <div class="menu-card__top"><h4 class="menu-card__name">Croissant se šunkou</h4><span class="menu-card__price">89 Kč</span></div>
+              <div class="menu-card__top"><h4 class="menu-card__name">Mandlový croissant</h4><span class="menu-card__price">69&nbsp;Kč</span></div>
               <span class="menu-card__size">1 ks</span>
-              <p class="menu-card__desc">Máslový croissant, šunka, sýr a ledový salát.</p>
-            </div>
-          </li>
-          <li class="menu-card">
-            <img class="menu-card__img" src="images/menu/quiche.jpg" alt="Quiche" width="800" height="600" loading="lazy">
-            <div class="menu-card__body">
-              <div class="menu-card__top"><h4 class="menu-card__name">Quiche</h4><span class="menu-card__price">115 Kč</span></div>
-              <span class="menu-card__size">160 g</span>
-              <p class="menu-card__desc">Slaný koláč s pórkem a sýrem, podle dne i se slaninou.</p>
+              <p class="menu-card__desc">Máslový croissant plněný mandlovým krémem, s plátky mandlí.</p>
             </div>
           </li>
         </ul>
       </div>
       <div class="menu__panel" role="tabpanel" id="panel-caj" aria-labelledby="tab-caj">
-        <h3 class="menu__cat-title">Čaj a čokoláda</h3>
+        <h3 class="menu__cat-title">Matcha a čaj</h3>
         <ul class="menu__cards">
           <li class="menu-card">
-            <img class="menu-card__img" src="images/menu/caj.jpg" alt="Sypaný čaj" width="800" height="600" loading="lazy">
+            <img class="menu-card__img" src="images/menu/matcha-latte.webp" alt="Matcha latte" width="800" height="600" loading="lazy">
             <div class="menu-card__body">
-              <div class="menu-card__top"><h4 class="menu-card__name">Sypaný čaj</h4><span class="menu-card__price">59 Kč</span></div>
-              <span class="menu-card__size">konvička 400 ml</span>
-              <p class="menu-card__desc">Zelený, černý nebo ovocný. Vyberete si u pultu.</p>
-            </div>
-          </li>
-          <li class="menu-card">
-            <img class="menu-card__img" src="images/menu/chai.jpg" alt="Chai latte" width="800" height="600" loading="lazy">
-            <div class="menu-card__body">
-              <div class="menu-card__top"><h4 class="menu-card__name">Chai latte</h4><span class="menu-card__price">85 Kč</span></div>
+              <div class="menu-card__top"><h4 class="menu-card__name">Matcha latte</h4><span class="menu-card__price">89&nbsp;Kč</span></div>
               <span class="menu-card__size">300 ml</span>
-              <p class="menu-card__desc">Kořeněný čaj se skořicí a kardamomem, s napěněným mlékem.</p>
+              <p class="menu-card__desc">Japonská matcha s napěněným mlékem, jemně nasládlá.</p>
             </div>
           </li>
           <li class="menu-card">
             <span class="menu-card__stickers"><span class="sticker sticker--novinka">novinka</span></span>
-            <img class="menu-card__img" src="images/menu/matcha.jpg" alt="Matcha latte" width="800" height="600" loading="lazy">
+            <img class="menu-card__img" src="images/menu/ledova-matcha.webp" alt="Mango matcha" width="800" height="600" loading="lazy">
             <div class="menu-card__body">
-              <div class="menu-card__top"><h4 class="menu-card__name">Matcha latte</h4><span class="menu-card__price">89 Kč</span></div>
+              <div class="menu-card__top"><h4 class="menu-card__name">Mango matcha</h4><span class="menu-card__price">99&nbsp;Kč</span></div>
               <span class="menu-card__size">300 ml</span>
-              <p class="menu-card__desc">Japonská matcha s mlékem, jemně nasládlá.</p>
+              <p class="menu-card__desc">Ledová matcha s mlékem na mangovém pyré.</p>
             </div>
           </li>
           <li class="menu-card">
-            <img class="menu-card__img" src="images/menu/cokolada.jpg" alt="Horká čokoláda" width="800" height="600" loading="lazy">
+            <span class="menu-card__stickers"><span class="sticker sticker--letni">letní</span></span>
+            <img class="menu-card__img" src="images/menu/jahodova-matcha.webp" alt="Jahodová matcha" width="800" height="600" loading="lazy">
             <div class="menu-card__body">
-              <div class="menu-card__top"><h4 class="menu-card__name">Horká čokoláda</h4><span class="menu-card__price">79 Kč</span></div>
-              <span class="menu-card__size">200 ml</span>
-              <p class="menu-card__desc">Hustá, z pravé čokolády. Šlehačka na přání.</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="menu__panel" role="tabpanel" id="panel-deti" aria-labelledby="tab-deti">
-        <h3 class="menu__cat-title">Pro děti</h3>
-        <ul class="menu__cards">
-          <li class="menu-card">
-            <img class="menu-card__img" src="images/menu/kakao.jpg" alt="Dětské kakao" width="800" height="600" loading="lazy">
-            <div class="menu-card__body">
-              <div class="menu-card__top"><h4 class="menu-card__name">Dětské kakao</h4><span class="menu-card__price">49 Kč</span></div>
-              <span class="menu-card__size">200 ml</span>
-              <p class="menu-card__desc">Teplé kakao s mlékem, ne moc sladké.</p>
-            </div>
-          </li>
-          <li class="menu-card">
-            <img class="menu-card__img" src="images/menu/babyccino.jpg" alt="Babyccino" width="800" height="600" loading="lazy">
-            <div class="menu-card__body">
-              <div class="menu-card__top"><h4 class="menu-card__name">Babyccino</h4><span class="menu-card__price">25 Kč</span></div>
-              <span class="menu-card__size">100 ml</span>
-              <p class="menu-card__desc">Napěněné mléko posypané kakaem. Jako káva pro velké.</p>
-            </div>
-          </li>
-          <li class="menu-card">
-            <img class="menu-card__img" src="images/menu/sirup.jpg" alt="Malinová šťáva" width="800" height="600" loading="lazy">
-            <div class="menu-card__body">
-              <div class="menu-card__top"><h4 class="menu-card__name">Malinová šťáva</h4><span class="menu-card__price">35 Kč</span></div>
+              <div class="menu-card__top"><h4 class="menu-card__name">Jahodová matcha</h4><span class="menu-card__price">99&nbsp;Kč</span></div>
               <span class="menu-card__size">300 ml</span>
-              <p class="menu-card__desc">Domácí malinový sirup s vodou.</p>
+              <p class="menu-card__desc">Ledová matcha s mlékem a jahodovou pěnou.</p>
+            </div>
+          </li>
+          <li class="menu-card">
+            <img class="menu-card__img" src="images/menu/caj.webp" alt="Čaj Ronnefeldt" width="800" height="600" loading="lazy">
+            <div class="menu-card__body">
+              <div class="menu-card__top"><h4 class="menu-card__name">Čaj Ronnefeldt</h4><span class="menu-card__price">59&nbsp;Kč</span></div>
+              <span class="menu-card__size">400 ml</span>
+              <p class="menu-card__desc">Zelený, černý, ovocný i bylinný. Vyberete si u pultu.</p>
             </div>
           </li>
         </ul>
       </div>
       <div class="menu__panel" role="tabpanel" id="panel-limonady" aria-labelledby="tab-limonady">
-        <h3 class="menu__cat-title">Limonády a nealko</h3>
+        <h3 class="menu__cat-title">Domácí limonády</h3>
         <ul class="menu__cards">
           <li class="menu-card">
-            <img class="menu-card__img" src="images/menu/limonada.jpg" alt="Domácí limonáda" width="800" height="600" loading="lazy">
+            <span class="menu-card__stickers"><span class="sticker sticker--oblibene">oblíbené</span></span>
+            <img class="menu-card__img" src="images/menu/limonada.webp" alt="Ovocná limonáda" width="800" height="600" loading="lazy">
             <div class="menu-card__body">
-              <div class="menu-card__top"><h4 class="menu-card__name">Domácí limonáda</h4><span class="menu-card__price">69 Kč</span></div>
+              <div class="menu-card__top"><h4 class="menu-card__name">Ovocná limonáda</h4><span class="menu-card__price">79&nbsp;Kč</span></div>
               <span class="menu-card__size">0,4 l</span>
-              <p class="menu-card__desc">Citron s mátou nebo sezonní ovoce. Děláme ji každý den.</p>
+              <p class="menu-card__desc">Vrstvy ovocného pyré, perlivá voda a čerstvé maliny. Děláme ji každý den.</p>
             </div>
           </li>
           <li class="menu-card">
-            <img class="menu-card__img" src="images/menu/dzban.jpg" alt="Limonáda ve džbánu" width="800" height="600" loading="lazy">
+            <img class="menu-card__img" src="images/menu/ledovy-caj.webp" alt="Ledový čaj" width="800" height="600" loading="lazy">
             <div class="menu-card__body">
-              <div class="menu-card__top"><h4 class="menu-card__name">Limonáda ve džbánu</h4><span class="menu-card__price">149 Kč</span></div>
-              <span class="menu-card__size">1 l</span>
-              <p class="menu-card__desc">Pro celý stůl, se sklenicemi a ledem.</p>
+              <div class="menu-card__top"><h4 class="menu-card__name">Ledový čaj</h4><span class="menu-card__price">69&nbsp;Kč</span></div>
+              <span class="menu-card__size">0,4 l</span>
+              <p class="menu-card__desc">Domácí, z vychlazeného čaje, s ovocem a mochyní.</p>
             </div>
           </li>
           <li class="menu-card">
-            <img class="menu-card__img" src="images/menu/ledcaj.jpg" alt="Ledový čaj" width="800" height="600" loading="lazy">
+            <img class="menu-card__img" src="images/menu/bylinkova-limonada.webp" alt="Bylinková limonáda" width="800" height="600" loading="lazy">
             <div class="menu-card__body">
-              <div class="menu-card__top"><h4 class="menu-card__name">Ledový čaj</h4><span class="menu-card__price">65 Kč</span></div>
-              <span class="menu-card__size">400 ml</span>
-              <p class="menu-card__desc">Domácí, z vychlazeného čaje a broskví.</p>
-            </div>
-          </li>
-          <li class="menu-card">
-            <img class="menu-card__img" src="images/menu/voda.jpg" alt="Minerální voda" width="800" height="600" loading="lazy">
-            <div class="menu-card__body">
-              <div class="menu-card__top"><h4 class="menu-card__name">Minerální voda</h4><span class="menu-card__price">39 Kč</span></div>
-              <span class="menu-card__size">330 ml</span>
-              <p class="menu-card__desc">Perlivá nebo neperlivá.</p>
+              <div class="menu-card__top"><h4 class="menu-card__name">Bylinková limonáda</h4><span class="menu-card__price">75&nbsp;Kč</span></div>
+              <span class="menu-card__size">0,4 l</span>
+              <p class="menu-card__desc">Citrusy, čerstvé bylinky a led.</p>
             </div>
           </li>
         </ul>
       </div>
     </section>
 
+    <!-- ============ DORTY NA ZAKÁZKU ============ -->
+    <section class="cakes" id="dorty">
+      <div class="divider divider--offer" aria-hidden="true"></div>
+      <div class="cakes__inner">
+        <!-- Foto: Google Mapy, profil Kavárna Cukrkandl -->
+        <img class="cakes__img" src="images/dort-kvetiny.webp" alt="Bílý dort zdobený živými květinami" width="1200" height="1600" loading="lazy" data-appear>
+        <div class="cakes__text" data-appear>
+          <h2 class="cakes__title">Dort přesně podle vás</h2>
+          <p class="cakes__lead">Vyberete chuť, velikost i zdobení. Na narozeniny, svatbu, křtiny nebo jen tak pro radost.</p>
+          <a class="btn cakes__btn" href="#objednavka" data-booking-type="dort">Objednat dort</a>
+        </div>
+      </div>
+    </section>
+
     <!-- ============ OCHUTNEJTE OČIMA + INSTAGRAM / FACEBOOK ============ -->
     <section class="offer" id="galerie">
-      <div class="texture texture--crumbs" aria-hidden="true"></div>
-      <div class="divider divider--offer" aria-hidden="true"></div>
+      <div class="divider divider--cream" aria-hidden="true"></div>
       <div class="offer__content">
         <h2 class="section-title" data-appear>Ochutnejte očima</h2>
         <p class="offer__lead" data-appear>Novinky, dorty dne a fotky z kavárny sdílíme na sítích.</p>
-        <!-- Běžící pás fotek (nahradit fotkami z Instagramu – stačí přepsat soubory v images/) -->
+        <!-- Běžící pás fotek – z Google Map (profil kavárny a recenze), soubory v images/foto/ -->
       <div class="ticker ticker--photos" aria-label="Fotografie z kavárny">
         <div class="ticker__track">
           <ul class="ticker__set">
-            <li class="photo photo--1"><img src="images/dort-ostruzina.jpg" alt="Kousek domácího dortu s ostružinou" width="788" height="1400"></li>
-            <li class="photo photo--2"><img src="images/interier.jpg" alt="Interiér kavárny se stolky" width="788" height="1400"></li>
-            <li class="photo photo--3"><img src="images/interier-pult.jpg" alt="Pult s vitrínou dortů" width="1400" height="788"></li>
-            <li class="photo photo--5"><img src="images/kava-toast.jpg" alt="Káva a snídaňový toast" width="1400" height="1050"></li>
-            <!-- sada musí být širší než nejširší obrazovka, jinak na konci smyčky vznikne mezera – proto 8 fotek -->
-            <li class="photo photo--1"><img src="images/dort-ostruzina.jpg" alt="" width="788" height="1400"></li>
-            <li class="photo photo--2"><img src="images/interier.jpg" alt="" width="788" height="1400"></li>
-            <li class="photo photo--3"><img src="images/interier-pult.jpg" alt="" width="1400" height="788"></li>
-            <li class="photo photo--5"><img src="images/kava-toast.jpg" alt="" width="1400" height="1050"></li>
+            <li class="photo photo--1"><img src="images/foto/pistaciove-kosicky.webp" alt="Pistáciové košíčky s ostružinou ve vitríně" width="700" height="790" loading="lazy"></li>
+            <li class="photo photo--2"><img src="images/foto/interier.webp" alt="Interiér kavárny s cihlovou stěnou" width="760" height="860" loading="lazy"></li>
+            <li class="photo photo--3"><img src="images/foto/exterier.webp" alt="Vchod do kavárny Cukrkandl" width="920" height="620" loading="lazy"></li>
+            <li class="photo photo--5"><img src="images/foto/pusinky.webp" alt="Pusinky se šlehaným krémem a malinami" width="760" height="760" loading="lazy"></li>
+            <li class="photo photo--1"><img src="images/foto/dort-fiky.webp" alt="Dort s fíky a malinami" width="700" height="790" loading="lazy"></li>
+            <li class="photo photo--2"><img src="images/foto/domecek.webp" alt="Dřevěný domeček v dětském koutku" width="760" height="860" loading="lazy"></li>
+            <li class="photo photo--3"><img src="images/foto/zahradka.webp" alt="Zahrádka kavárny" width="920" height="620" loading="lazy"></li>
+            <li class="photo photo--5"><img src="images/foto/tiramisu.webp" alt="Tiramisu kopule" width="760" height="760" loading="lazy"></li>
           </ul>
           <ul class="ticker__set" aria-hidden="true">
-            <li class="photo photo--1"><img src="images/dort-ostruzina.jpg" alt="" width="788" height="1400"></li>
-            <li class="photo photo--2"><img src="images/interier.jpg" alt="" width="788" height="1400"></li>
-            <li class="photo photo--3"><img src="images/interier-pult.jpg" alt="" width="1400" height="788"></li>
-            <li class="photo photo--5"><img src="images/kava-toast.jpg" alt="" width="1400" height="1050"></li>
-            <li class="photo photo--1"><img src="images/dort-ostruzina.jpg" alt="" width="788" height="1400"></li>
-            <li class="photo photo--2"><img src="images/interier.jpg" alt="" width="788" height="1400"></li>
-            <li class="photo photo--3"><img src="images/interier-pult.jpg" alt="" width="1400" height="788"></li>
-            <li class="photo photo--5"><img src="images/kava-toast.jpg" alt="" width="1400" height="1050"></li>
+            <li class="photo photo--1"><img src="images/foto/pistaciove-kosicky.webp" alt="" width="700" height="790" loading="lazy"></li>
+            <li class="photo photo--2"><img src="images/foto/interier.webp" alt="" width="760" height="860" loading="lazy"></li>
+            <li class="photo photo--3"><img src="images/foto/exterier.webp" alt="" width="920" height="620" loading="lazy"></li>
+            <li class="photo photo--5"><img src="images/foto/pusinky.webp" alt="" width="760" height="760" loading="lazy"></li>
+            <li class="photo photo--1"><img src="images/foto/dort-fiky.webp" alt="" width="700" height="790" loading="lazy"></li>
+            <li class="photo photo--2"><img src="images/foto/domecek.webp" alt="" width="760" height="860" loading="lazy"></li>
+            <li class="photo photo--3"><img src="images/foto/zahradka.webp" alt="" width="920" height="620" loading="lazy"></li>
+            <li class="photo photo--5"><img src="images/foto/tiramisu.webp" alt="" width="760" height="760" loading="lazy"></li>
           </ul>
         </div>
       </div>
@@ -482,8 +453,8 @@
             <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6"/></svg>
             Instagram
           </a>
-          <!-- Samostatná stránka galerie – zatím neexistuje -->
-          <a class="btn btn--gallery" href="galerie.html">Galerie</a>
+          <!-- Galerie zatím vede na Instagram -->
+          <a class="btn btn--gallery" href="https://www.instagram.com/cukrkandl_svitavy/" target="_blank" rel="noopener">Galerie</a>
           <a class="btn btn--social" href="https://www.facebook.com/profile.php?id=100063494203565" target="_blank" rel="noopener">
             <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h-2.5A4.5 4.5 0 0 0 8 7.5V10H5.5v3.5H8V21h3.5v-7.5H14l.5-3.5h-3V7.8c0-.7.5-1.3 1.3-1.3H15z"/></svg>
             Facebook
@@ -493,37 +464,37 @@
     </section>
 
     <!-- ============ REZERVACE / OBJEDNÁVKA (podle šablony „Reserve a Table“) ============ -->
-    <section class="booking" id="rezervace">
+    <section class="booking" id="objednavka">
       <div class="booking__bg" aria-hidden="true">
         <div class="booking__cols">
           <div class="booking__col"><div class="booking__col-track">
-            <img src="images/interier.jpg" alt=""><img src="images/dort-ostruzina.jpg" alt=""><img src="images/kava-toast.jpg" alt="">
-            <img src="images/interier.jpg" alt=""><img src="images/dort-ostruzina.jpg" alt=""><img src="images/kava-toast.jpg" alt="">
-            <img src="images/interier.jpg" alt=""><img src="images/dort-ostruzina.jpg" alt=""><img src="images/kava-toast.jpg" alt="">
-            <img src="images/interier.jpg" alt=""><img src="images/dort-ostruzina.jpg" alt=""><img src="images/kava-toast.jpg" alt="">
+            <img width="760" height="860" src="images/foto/interier.webp" alt="" loading="lazy"><img width="760" height="760" src="images/foto/pusinky.webp" alt="" loading="lazy"><img width="700" height="790" src="images/foto/dort-fiky.webp" alt="" loading="lazy">
+            <img width="760" height="860" src="images/foto/interier.webp" alt="" loading="lazy"><img width="760" height="760" src="images/foto/pusinky.webp" alt="" loading="lazy"><img width="700" height="790" src="images/foto/dort-fiky.webp" alt="" loading="lazy">
+            <img width="760" height="860" src="images/foto/interier.webp" alt="" loading="lazy"><img width="760" height="760" src="images/foto/pusinky.webp" alt="" loading="lazy"><img width="700" height="790" src="images/foto/dort-fiky.webp" alt="" loading="lazy">
+            <img width="760" height="860" src="images/foto/interier.webp" alt="" loading="lazy"><img width="760" height="760" src="images/foto/pusinky.webp" alt="" loading="lazy"><img width="700" height="790" src="images/foto/dort-fiky.webp" alt="" loading="lazy">
           </div></div>
           <div class="booking__col booking__col--down"><div class="booking__col-track">
-            <img src="images/interier-pult.jpg" alt=""><img src="images/exterier.jpg" alt=""><img src="images/dort-ostruzina.jpg" alt="">
-            <img src="images/interier-pult.jpg" alt=""><img src="images/exterier.jpg" alt=""><img src="images/dort-ostruzina.jpg" alt="">
-            <img src="images/interier-pult.jpg" alt=""><img src="images/exterier.jpg" alt=""><img src="images/dort-ostruzina.jpg" alt="">
-            <img src="images/interier-pult.jpg" alt=""><img src="images/exterier.jpg" alt=""><img src="images/dort-ostruzina.jpg" alt="">
+            <img width="920" height="620" src="images/foto/exterier.webp" alt="" loading="lazy"><img width="760" height="760" src="images/foto/tiramisu.webp" alt="" loading="lazy"><img width="700" height="790" src="images/foto/pistaciove-kosicky.webp" alt="" loading="lazy">
+            <img width="920" height="620" src="images/foto/exterier.webp" alt="" loading="lazy"><img width="760" height="760" src="images/foto/tiramisu.webp" alt="" loading="lazy"><img width="700" height="790" src="images/foto/pistaciove-kosicky.webp" alt="" loading="lazy">
+            <img width="920" height="620" src="images/foto/exterier.webp" alt="" loading="lazy"><img width="760" height="760" src="images/foto/tiramisu.webp" alt="" loading="lazy"><img width="700" height="790" src="images/foto/pistaciove-kosicky.webp" alt="" loading="lazy">
+            <img width="920" height="620" src="images/foto/exterier.webp" alt="" loading="lazy"><img width="760" height="760" src="images/foto/tiramisu.webp" alt="" loading="lazy"><img width="700" height="790" src="images/foto/pistaciove-kosicky.webp" alt="" loading="lazy">
           </div></div>
           <div class="booking__col"><div class="booking__col-track">
-            <img src="images/kava-toast.jpg" alt=""><img src="images/interier.jpg" alt=""><img src="images/interier-pult.jpg" alt="">
-            <img src="images/kava-toast.jpg" alt=""><img src="images/interier.jpg" alt=""><img src="images/interier-pult.jpg" alt="">
-            <img src="images/kava-toast.jpg" alt=""><img src="images/interier.jpg" alt=""><img src="images/interier-pult.jpg" alt="">
-            <img src="images/kava-toast.jpg" alt=""><img src="images/interier.jpg" alt=""><img src="images/interier-pult.jpg" alt="">
+            <img width="920" height="620" src="images/foto/zahradka.webp" alt="" loading="lazy"><img width="700" height="790" src="images/foto/dort-fiky.webp" alt="" loading="lazy"><img width="760" height="860" src="images/foto/interier.webp" alt="" loading="lazy">
+            <img width="920" height="620" src="images/foto/zahradka.webp" alt="" loading="lazy"><img width="700" height="790" src="images/foto/dort-fiky.webp" alt="" loading="lazy"><img width="760" height="860" src="images/foto/interier.webp" alt="" loading="lazy">
+            <img width="920" height="620" src="images/foto/zahradka.webp" alt="" loading="lazy"><img width="700" height="790" src="images/foto/dort-fiky.webp" alt="" loading="lazy"><img width="760" height="860" src="images/foto/interier.webp" alt="" loading="lazy">
+            <img width="920" height="620" src="images/foto/zahradka.webp" alt="" loading="lazy"><img width="700" height="790" src="images/foto/dort-fiky.webp" alt="" loading="lazy"><img width="760" height="860" src="images/foto/interier.webp" alt="" loading="lazy">
           </div></div>
           <div class="booking__col booking__col--down"><div class="booking__col-track">
-            <img src="images/dort-ostruzina.jpg" alt=""><img src="images/kava-toast.jpg" alt=""><img src="images/exterier.jpg" alt="">
-            <img src="images/dort-ostruzina.jpg" alt=""><img src="images/kava-toast.jpg" alt=""><img src="images/exterier.jpg" alt="">
-            <img src="images/dort-ostruzina.jpg" alt=""><img src="images/kava-toast.jpg" alt=""><img src="images/exterier.jpg" alt="">
-            <img src="images/dort-ostruzina.jpg" alt=""><img src="images/kava-toast.jpg" alt=""><img src="images/exterier.jpg" alt="">
+            <img width="700" height="790" src="images/foto/pistaciove-kosicky.webp" alt="" loading="lazy"><img width="760" height="860" src="images/foto/domecek.webp" alt="" loading="lazy"><img width="760" height="760" src="images/foto/pusinky.webp" alt="" loading="lazy">
+            <img width="700" height="790" src="images/foto/pistaciove-kosicky.webp" alt="" loading="lazy"><img width="760" height="860" src="images/foto/domecek.webp" alt="" loading="lazy"><img width="760" height="760" src="images/foto/pusinky.webp" alt="" loading="lazy">
+            <img width="700" height="790" src="images/foto/pistaciove-kosicky.webp" alt="" loading="lazy"><img width="760" height="860" src="images/foto/domecek.webp" alt="" loading="lazy"><img width="760" height="760" src="images/foto/pusinky.webp" alt="" loading="lazy">
+            <img width="700" height="790" src="images/foto/pistaciove-kosicky.webp" alt="" loading="lazy"><img width="760" height="860" src="images/foto/domecek.webp" alt="" loading="lazy"><img width="760" height="760" src="images/foto/pusinky.webp" alt="" loading="lazy">
           </div></div>
         </div>
       </div>
 
-      <h2 class="section-title section-title--pink" data-appear>Rezervace a objednávky</h2>
+      <h2 class="section-title section-title--pink" data-appear>Objednávky a rezervace</h2>
 
       <!-- Web3Forms: po doplnění access_key začne formulář odesílat e-maily -->
       <form class="booking__form" action="https://api.web3forms.com/submit" method="POST" data-booking data-appear novalidate>
@@ -534,8 +505,8 @@
 
         <fieldset class="booking__types">
           <legend class="booking__legend">S čím vám můžeme pomoct?</legend>
-          <label class="booking__type"><input type="radio" name="Typ" value="Rezervace stolu" data-type="rezervace" checked><span>Rezervace stolu</span></label>
-          <label class="booking__type"><input type="radio" name="Typ" value="Objednávka dortu" data-type="dort"><span>Objednávka dortu</span></label>
+          <label class="booking__type"><input type="radio" name="Typ" value="Objednávka dortu" data-type="dort" checked><span>Objednávka dortu</span></label>
+          <label class="booking__type"><input type="radio" name="Typ" value="Rezervace stolu" data-type="rezervace"><span>Rezervace stolu</span></label>
           <label class="booking__type"><input type="radio" name="Typ" value="Dotaz" data-type="dotaz"><span>Dotaz</span></label>
         </fieldset>
 
@@ -553,21 +524,21 @@
             <input class="field__input" type="email" name="E-mail" placeholder="jana@email.cz" autocomplete="email" required>
           </label>
           <label class="field" data-for="rezervace dort">
-            <span class="field__label" data-label-rezervace="Počet hostů*" data-label-dort="Počet porcí*">Počet hostů*</span>
-            <input class="field__input" type="number" name="Počet" min="1" max="60" placeholder="4" data-placeholder-rezervace="4" data-placeholder-dort="12" required>
+            <span class="field__label" data-label-rezervace="Počet hostů*" data-label-dort="Počet porcí*">Počet porcí*</span>
+            <input class="field__input" type="number" name="Počet" min="1" max="60" placeholder="12" data-placeholder-rezervace="4" data-placeholder-dort="12" required>
           </label>
           <label class="field" data-for="rezervace dort">
-            <span class="field__label" data-label-rezervace="Datum*" data-label-dort="Datum vyzvednutí*">Datum*</span>
+            <span class="field__label" data-label-rezervace="Datum*" data-label-dort="Datum vyzvednutí*">Datum vyzvednutí*</span>
             <input class="field__input" type="date" name="Datum" required>
           </label>
           <label class="field" data-for="rezervace dort">
-            <span class="field__label" data-label-rezervace="Čas*" data-label-dort="Čas vyzvednutí*">Čas*</span>
+            <span class="field__label" data-label-rezervace="Čas*" data-label-dort="Čas vyzvednutí*">Čas vyzvednutí*</span>
             <input class="field__input" type="time" name="Čas" min="11:00" max="18:00" step="900" required>
           </label>
           <label class="field field--wide">
-            <span class="field__label" data-label-rezervace="Poznámka" data-label-dort="Jaký dort si přejete?*" data-label-dotaz="Vaše zpráva*">Poznámka</span>
+            <span class="field__label" data-label-rezervace="Poznámka" data-label-dort="Jaký dort si přejete?*" data-label-dotaz="Vaše zpráva*">Jaký dort si přejete?*</span>
             <textarea class="field__input field__input--area" name="Zpráva" rows="4"
-              placeholder="Stůl u okna, slavíme narozeniny"
+              placeholder="Příchuť, velikost, nápis na dort…"
               data-placeholder-rezervace="Stůl u okna, slavíme narozeniny"
               data-placeholder-dort="Příchuť, velikost, nápis na dort…"
               data-placeholder-dotaz="Na co se chcete zeptat?"></textarea>
@@ -577,15 +548,15 @@
         <p class="booking__hint">Otevřeno út–pá 11:00–18:00, so 12:30–18:00. V neděli a v pondělí máme zavřeno.</p>
 
         <div class="booking__actions">
-          <button class="btn btn--pink booking__submit" type="submit" data-label-rezervace="Odeslat rezervaci" data-label-dort="Odeslat objednávku" data-label-dotaz="Odeslat dotaz">Odeslat rezervaci</button>
+          <button class="btn btn--pink booking__submit" type="submit" data-label-rezervace="Odeslat rezervaci" data-label-dort="Odeslat objednávku" data-label-dotaz="Odeslat dotaz">Odeslat objednávku</button>
           <p class="booking__status" role="status" aria-live="polite"></p>
         </div>
+        <p class="booking__consent">Odesláním formuláře berete na vědomí <a href="#zpracovani-osobnich-udaju">zpracování osobních údajů</a>.</p>
       </form>
     </section>
 
     <!-- ============ RECENZE ============ -->
     <section class="reviews" id="recenze">
-      <div class="texture texture--crumbs" aria-hidden="true"></div>
       <h2 class="section-title reviews__title" data-appear>Chuť, ke které se lidé vrací</h2>
 
       <!-- Odznaky = odkazy na profily, kde se recenze čtou i píšou -->
@@ -636,8 +607,8 @@
           <div class="review__top"><span class="google-word google-word--sm" aria-label="Google"><b>G</b><b>o</b><b>o</b><b>g</b><b>l</b><b>e</b></span><span class="stars" style="--rating: 5" role="img" aria-label="5 z 5 hvězdiček"></span></div>
           <blockquote class="review__quote">Krásná kavárna. Příjemná a milá obsluha. Výborné kafe a ceny velmi lidové. Dětský koutek a přebalovací pult velmi oceňuji. Jen doporučuji ❤️</blockquote>
           <div class="review__photos">
-            <a class="review__photo" href="images/recenze/kohoutova-1.jpg" data-author="Kateřina K."><img src="images/recenze/kohoutova-1-nahled.jpg" alt="Fotka z kavárny od Kateřiny K." width="44" height="44" loading="lazy"></a>
-            <a class="review__photo" href="images/recenze/kohoutova-2.jpg" data-author="Kateřina K."><img src="images/recenze/kohoutova-2-nahled.jpg" alt="Další fotka z kavárny od Kateřiny K." width="44" height="44" loading="lazy"></a>
+            <a class="review__photo" href="images/recenze/kohoutova-1.webp" data-author="Kateřina K."><img src="images/recenze/kohoutova-1-nahled.webp" alt="Fotka z kavárny od Kateřiny K." width="44" height="44" loading="lazy"></a>
+            <a class="review__photo" href="images/recenze/kohoutova-2.webp" data-author="Kateřina K."><img src="images/recenze/kohoutova-2-nahled.webp" alt="Další fotka z kavárny od Kateřiny K." width="44" height="44" loading="lazy"></a>
           </div>
           <footer class="review__author"><span class="avatar" aria-hidden="true">KK</span><b class="review__name">Kateřina K.</b></footer>
         </li>
@@ -650,8 +621,8 @@
           <div class="review__top"><span class="google-word google-word--sm" aria-label="Google"><b>G</b><b>o</b><b>o</b><b>g</b><b>l</b><b>e</b></span><span class="stars" style="--rating: 5" role="img" aria-label="5 z 5 hvězdiček"></span></div>
           <blockquote class="review__quote">Malá kavárnička poblíž centra, skvělá káva i zákusky, milá obsluha, čistý interiér, jasná 5*</blockquote>
           <div class="review__photos">
-            <a class="review__photo" href="images/recenze/fof-1.jpg" data-author="Vlastimil F."><img src="images/recenze/fof-1-nahled.jpg" alt="Fotka od Vlastimila F." width="44" height="44" loading="lazy"></a>
-            <a class="review__photo" href="images/recenze/fof-2.jpg" data-author="Vlastimil F."><img src="images/recenze/fof-2-nahled.jpg" alt="Další fotka od Vlastimila F." width="44" height="44" loading="lazy"></a>
+            <a class="review__photo" href="images/recenze/fof-1.webp" data-author="Vlastimil F."><img src="images/recenze/fof-1-nahled.webp" alt="Fotka od Vlastimila F." width="44" height="44" loading="lazy"></a>
+            <a class="review__photo" href="images/recenze/fof-2.webp" data-author="Vlastimil F."><img src="images/recenze/fof-2-nahled.webp" alt="Další fotka od Vlastimila F." width="44" height="44" loading="lazy"></a>
           </div>
           <footer class="review__author"><span class="avatar" aria-hidden="true">VF</span><b class="review__name">Vlastimil F.</b></footer>
         </li>
@@ -659,8 +630,8 @@
           <div class="review__top"><span class="google-word google-word--sm" aria-label="Google"><b>G</b><b>o</b><b>o</b><b>g</b><b>l</b><b>e</b></span><span class="stars" style="--rating: 5" role="img" aria-label="5 z 5 hvězdiček"></span></div>
           <blockquote class="review__quote">Úžasné, dokonalé a vynikající dezerty! Paní je moc milá a ochotná. Do Cukrkandlu pro dortíky se mé chuťové pohárky vždy moc těší. Mohu jen a jen doporučit.</blockquote>
           <div class="review__photos">
-            <a class="review__photo" href="images/recenze/slezakova-1.jpg" data-author="Silvie S."><img src="images/recenze/slezakova-1-nahled.jpg" alt="Fotka dezertu od Silvie S." width="44" height="44" loading="lazy"></a>
-            <a class="review__photo" href="images/recenze/slezakova-2.jpg" data-author="Silvie S."><img src="images/recenze/slezakova-2-nahled.jpg" alt="Další fotka od Silvie S." width="44" height="44" loading="lazy"></a>
+            <a class="review__photo" href="images/recenze/slezakova-1.webp" data-author="Silvie S."><img src="images/recenze/slezakova-1-nahled.webp" alt="Fotka dezertu od Silvie S." width="44" height="44" loading="lazy"></a>
+            <a class="review__photo" href="images/recenze/slezakova-2.webp" data-author="Silvie S."><img src="images/recenze/slezakova-2-nahled.webp" alt="Další fotka od Silvie S." width="44" height="44" loading="lazy"></a>
           </div>
           <footer class="review__author"><span class="avatar" aria-hidden="true">SS</span><b class="review__name">Silvie S.</b></footer>
         </li>
@@ -683,11 +654,11 @@
   <footer class="footer" id="kontakt">
     <div class="footer__main">
       <div class="footer__col footer__brand" data-appear>
-        <a class="footer__logo" href="#home" aria-label="Kavárna Cukrkandl – úvod">
+        <a class="footer__logo" href="#uvod" aria-label="Kavárna Cukrkandl – úvod">
           <img src="images/logo-cukrkandl.png" alt="Logo Kavárna Cukrkandl" width="80" height="80" loading="lazy">
         </a>
         <p class="footer__title">Sladké potěšení na dosah</p>
-        <a class="btn btn--pink btn--small" href="#rezervace" data-booking-type="rezervace">Rezervovat</a>
+        <a class="btn btn--pink btn--small" href="#objednavka" data-booking-type="dort">Objednat</a>
       </div>
 
       <div class="footer__col" data-appear>
@@ -719,7 +690,7 @@
       <div class="footer__col" data-appear>
         <h2 class="footer__heading">Sledujte nás</h2>
         <a class="footer__social" href="https://www.facebook.com/profile.php?id=100063494203565" target="_blank" rel="noopener">
-          <span class="footer__social-icon"><img src="images/facebook.png" alt="" width="40" height="40"></span>
+          <span class="footer__social-icon"><img src="images/facebook.png" alt="" width="40" height="40" loading="lazy"></span>
           Facebook
         </a>
         <a class="footer__social" href="https://www.instagram.com/cukrkandl_svitavy/" target="_blank" rel="noopener">
@@ -733,9 +704,9 @@
 
     <div class="footer__bar">
       <div class="footer__bar-inner">
-        <p>© 2026 Kavárna Cukrkandl <a href="#obchodni-podminky">Obchodní podmínky</a></p>
-        <!-- shortcut: odkaz na FuxaStudio a obchodní podmínky jsou zatím # – doplnit skutečné adresy -->
-        <p>Realizace webu: <a class="footer__studio" href="#">FuxaStudio</a></p>
+        <p>© 2026 Kavárna Cukrkandl <a href="#zpracovani-osobnich-udaju">Zpracování osobních údajů</a></p>
+        <!-- shortcut: odkaz na zpracování osobních údajů je zatím # – doplnit skutečné adresy -->
+        <p>Realizace webu: <a class="footer__studio" href="https://fuxastudio.cz" target="_blank" rel="noopener">FuxaStudio</a></p>
       </div>
     </div>
   </footer>

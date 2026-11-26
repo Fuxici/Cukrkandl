@@ -53,7 +53,7 @@ document.addEventListener('click', (e) => {
   if (!el) return;
   e.preventDefault();
   if (link.dataset.bookingType) setBookingType(link.dataset.bookingType);
-  scrollToY(id === 'home' ? 0 : el.getBoundingClientRect().top + window.scrollY);
+  scrollToY(id === 'uvod' ? 0 : el.getBoundingClientRect().top + window.scrollY);
   history.replaceState(null, '', '#' + id);
 });
 
@@ -78,14 +78,14 @@ window.matchMedia('(min-width: 810px)').addEventListener('change', (e) => { if (
 /* ---------- Animace řízené scrollem (hodnoty změřené z Frameru) ---------- */
 const line1 = document.querySelector('.hero__line--1');
 const line2 = document.querySelector('.hero__line--2');
+const heroCake = document.querySelector('.hero__cake');
 const heroLeft = document.querySelector('[data-deco="hero-left"]');
 const heroRight = document.querySelector('[data-deco="hero-right"]');
-const about = document.getElementById('about-us');
+const about = document.getElementById('o-nas');
 const aboutDecos = [
   { el: document.querySelector('[data-deco="about-left"]'), tx: -250, ty: 250, rot: -40 },
   { el: document.querySelector('[data-deco="about-right"]'), tx: 350, ty: 350, rot: 37 },
 ];
-
 // Framer hodnoty navázané na scroll ještě vyhlazuje: po skoku scrollu hodnota dojíždí
 // exponenciálně s τ ≈ 160 ms (změřeno), takže dekorace doplují a necvaknou na místo.
 const FOLLOW_MS = 160;
@@ -110,6 +110,8 @@ function render() {
   const shift = 350 * cur.shift;
   line1.style.transform = `translateX(${-shift}px)`;
   line2.style.transform = `translateX(${shift}px)`;
+  // `rotate`, ne `transform` – ten drží úvodní animace cake-in a přebila by ho
+  heroCake.style.rotate = `${40 * cur.shift}deg`;
 
   const k = 1 - cur.hero;
   const s = 1.5 - 0.5 * cur.hero;
@@ -119,8 +121,7 @@ function render() {
   const a = cur.about;
   for (const d of aboutDecos) {
     d.el.style.transform = `translate(${d.tx * (1 - a)}px, ${d.ty * (1 - a)}px) rotate(${d.rot}deg) scale(${1.5 - 0.5 * a})`;
-  }
-}
+  }}
 
 function follow(now) {
   const dt = followLast ? Math.min(64, now - followLast) : 16.7;
@@ -270,7 +271,7 @@ form.addEventListener('submit', async (e) => {
   // shortcut: bez Web3Forms klíče formulář jen ukáže potvrzení (demo), po doplnění klíče odesílá
   if (!key || key === 'YOUR_ACCESS_KEY') {
     statusEl.className = 'booking__status is-ok';
-    statusEl.textContent = 'Děkujeme! (Ukázka – formulář zatím nikam neodesílá.)';
+    statusEl.textContent = 'Toto je ukázka návrhu, formulář zatím neodesílá.';
     form.reset();
     applyType();
     return;
